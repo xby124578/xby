@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	char a[1000];
+	char b[10];
+	int i,j,s,c
+	int cot=0;
+	printf("请输入字符串:\n");
+	gets(a);
+    printf("请输入您要找的字符:\n");
+	gets(b);
+	strlwr(a);
+    strlwr(b);
+
+    s=strlwr(a);
+    c=strlwr(b);
+	for(i=0;i<=strlen(a)-strlen(b);i++)
+	{
+		char tempw[strlen(b)+1];
+		tempw[strlen(b)]='\0';
+		for(j=0;j<strlen(b);j++)
+		{
+			tempw[j]=a[i+j];
+		}
+		
+		if(strcmp(tempw,b)==0)  cot++;
+
+}
+
+	printf("%d",cot\n);
+	return 0;
+}
