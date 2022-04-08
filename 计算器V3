@@ -14,14 +14,14 @@ int main()
 			 int leftoperand=strTmp[strTmpIndex]-'0';
 			 int rightoperand=ajaj[i+1]-'0';
 			 strTmp[strTmpIndex]=leftoperand*rightoperand+'0';
-             i++;
+                         i++;
 		}
 		else if(ajaj[i]=='/')
 		{
-		     int leftoperand=strTmp[strTmpIndex]-'0';
+		         int leftoperand=strTmp[strTmpIndex]-'0';
 			 int rightoperand=ajaj[i+1]-'0';
 			 strTmp[strTmpIndex]=leftoperand/rightoperand+'0';
-             i++;	 
+                         i++;	 
 		}
 		else strTmp[++strTmpIndex]=ajaj[i];
 	}	
